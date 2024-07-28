@@ -66,7 +66,7 @@ function exact(){
 function coincidence(){ 
   clear
   echo -e "\n${yellowColour}$banner${endColour}"
-  echo -ne "\n${ByellowColour}[+]${endColour}${grayColur} Introuduce la contraseña que quieras buscar${endColour}${turquoiseColour} -->${endColour} "
+  echo -ne "\n${ByellowColour}[+]${endColour}${grayColour} Introuduce la contraseña que quieras buscar${endColour}${turquoiseColour} -->${endColour} "
   read -s passwd
   echo ""
 
@@ -77,7 +77,7 @@ function coincidence(){
     echo -e "${grayColour}$searchPasswd${endColour}"
     echo -e "\n${ByellowColour}[!]${endColour}${grayColour} Se han encontrado${endColour}${purpleColour} $countCoincidences${endColour}${grayColour} coincidencias :O${endColour}"
   else
-    echo -e "${BgreenColour}[+]${endColour}${grayColour} No hemos encontrado la contraseña :D${endColour}"
+    echo -e "\n${BgreenColour}[+]${endColour}${grayColour} No hemos encontrado la contraseña :D${endColour}"
   fi
 }
 
