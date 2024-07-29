@@ -80,8 +80,8 @@ function coincidence(){
   read -s passwd
   echo ""
 
-  searchPasswd=$(cat $rockyou_file | grep -i $passwd)
-  countCoincidences=$(cat $rockyou_file | grep -c $passwd)
+  searchPasswd=$(cat $rockyou_file | grep -i "$passwd")
+  countCoincidences=$(cat $rockyou_file | grep -c "$passwd")
   
   if [ $? -eq 0 ];then
     echo -e "${grayColour}$searchPasswd${endColour}"
